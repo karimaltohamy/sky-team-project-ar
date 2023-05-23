@@ -1,0 +1,70 @@
+@use "../components/header";
+@use "../components/footer";
+@use "../components/banner-two";
+@use "../pages/index";
+@use "../pages/course-details";
+@use "../pages/about";
+@use "../pages/faq-section";
+@use "../pages/careers";
+@use "../pages/gallery";
+@use "../pages/videos";
+@use "../pages/blog";
+@use "../pages/blog-details";
+@use "../pages/contact";
+@use "../pages/register";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+svg {
+  width: 20px;
+}
+
+// start banner_section
+.banner_section {
+  position: relative;
+
+  .bg_banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// end banner_section

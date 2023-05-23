@@ -1,0 +1,164 @@
+$dark-color: #19232d;
+$primary-color: #dcbb87;
+
+// start careers_section
+.careers_section {
+  padding: 60px 0;
+
+  .line {
+    display: flex;
+    gap: 40px;
+
+    .left {
+      width: 70%;
+
+      h3 {
+        font-weight: 700;
+        font-size: 27px;
+        margin-bottom: 20px;
+      }
+
+      form {
+        .input_item {
+          margin-bottom: 20px;
+          input {
+            height: 60px;
+            width: 100%;
+            border: none;
+            background-color: #f8f7f1;
+            padding-left: 30px;
+            padding-right: 30px;
+            outline: none;
+            font-size: 14px;
+            color: #79817c;
+            display: block;
+            font-weight: 500;
+          }
+        }
+
+        .input_file {
+          margin-bottom: 20px;
+
+          input {
+            display: none;
+          }
+
+          label {
+            border: 1px dashed rgb(216, 216, 216);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100px;
+
+            svg {
+              color: gray;
+            }
+
+            span {
+              color: gray;
+            }
+          }
+        }
+
+        .btn_submit {
+          background-color: $primary-color;
+          color: white;
+          font-weight: 600;
+          font-size: 17px;
+          padding: 12px 35px;
+          border-radius: 4px;
+          border: none;
+        }
+      }
+    }
+
+    .right {
+      width: 30%;
+
+      .box_details {
+        position: relative;
+        padding: 40px;
+        background-color: $dark-color;
+        color: white;
+        border-radius: 6px;
+
+        p {
+          margin-bottom: 0;
+
+          a {
+            color: $primary-color !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .careers_section {
+    padding: 30px 0;
+
+    .line {
+      flex-direction: column;
+      gap: 20px;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        h3 {
+          font-size: 20px;
+        }
+
+        form {
+          .input_item {
+            margin-bottom: 10px;
+
+            input {
+              height: 40px;
+              padding-left: 15px;
+              padding-right: 15px;
+              font-size: 14px;
+            }
+          }
+
+          .input_file {
+            label {
+              height: 70px;
+
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .btn_submit {
+            padding: 8px 20px;
+            width: 100%;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .right {
+        .box_details {
+          padding: 15px;
+          text-align: center;
+
+          h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+// end careers_section

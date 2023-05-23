@@ -1,0 +1,137 @@
+$dark-color: #19232d;
+$primary-color: #dcbb87;
+
+// start register_form
+.register_form {
+  padding: 60px 0;
+  background-color: #fff3e1;
+  color: $dark-color;
+
+  form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+
+    .logo {
+      margin-bottom: 5px;
+      text-align: center;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    h4 {
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .input_item {
+      margin-bottom: 20px;
+      label {
+        display: block;
+        font-weight: 600;
+      }
+
+      input,
+      select {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: #f3f3f3;
+        padding-left: 15px;
+        padding-right: 15px;
+        outline: none;
+        font-size: 14px;
+        color: #79817c;
+        display: block;
+        font-weight: 500;
+      }
+    }
+
+    .input_file {
+      label {
+        padding: 6px 10px;
+        background-color: $dark-color;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+
+        i {
+          color: $primary-color;
+        }
+
+        span {
+          font-size: 13px;
+        }
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    .btn_send {
+      padding: 7px 40px;
+      background-color: $primary-color;
+      column-rule: white;
+      border-radius: 6px;
+      font-weight: 500;
+      border: none;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .register_form {
+    padding: 30px 0;
+
+    form {
+      padding: 12px;
+
+      .logo {
+        img {
+          width: 120px;
+        }
+      }
+
+      h4 {
+        margin-bottom: 15px;
+      }
+
+      .input_item {
+        margin-bottom: 8px;
+
+        label {
+          font-size: 13px;
+        }
+
+        input,
+        select {
+          height: 35px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 12px;
+        }
+      }
+
+      .input_file {
+        margin-bottom: 8px;
+      }
+
+      .btn_send {
+        padding: 6px 20px;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+// end register_form

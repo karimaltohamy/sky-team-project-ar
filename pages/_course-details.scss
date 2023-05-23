@@ -1,0 +1,452 @@
+$dark-color: #19232d;
+$primary-color: #dcbb87;
+
+// start course_details
+.course_details {
+  padding: 60px 0;
+
+  .image_details {
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .boxs_details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+
+    .box {
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 4px 8px 10px rgb(229, 229, 229);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f3f1;
+
+        i {
+          color: $primary-color;
+          font-size: 25px;
+        }
+      }
+
+      .text {
+        h4 {
+          font-size: 21px;
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 15px;
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .line {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+
+    .left {
+      width: 70%;
+
+      .title {
+        font-size: 25px;
+      }
+
+      .dsc {
+        font-size: 18px;
+        color: gray;
+        line-height: 1.6;
+      }
+
+      .career_opportunities {
+        margin-bottom: 30px;
+
+        h3 {
+          font-size: 22px;
+          margin-bottom: 6px;
+          font-weight: 700;
+        }
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+
+          i {
+            color: $primary-color;
+            font-size: 17px;
+          }
+
+          span {
+            font-weight: 500;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .study_options {
+        margin-bottom: 30px;
+
+        h3 {
+          font-size: 22px;
+          margin-bottom: 6px;
+          font-weight: 700;
+        }
+
+        table {
+          margin-top: 30px;
+          width: 70%;
+          border: 1px solid rgb(216, 216, 216);
+
+          thead {
+            text-align: center;
+            tr {
+              background-color: $primary-color;
+              color: white;
+              font-weight: 600;
+
+              th {
+                padding: 10px 0;
+              }
+            }
+          }
+
+          tbody {
+            text-align: center;
+            tr {
+              border-bottom: 1px solid rgb(216, 216, 216);
+              td {
+                font-weight: 600;
+                padding: 10px 0;
+
+                &:not(:last-child) {
+                  border-right: 1px solid rgb(216, 216, 216);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .professional_experience {
+        h3 {
+          h3 {
+            font-size: 22px;
+            margin-bottom: 6px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 30%;
+
+      .box_book_course {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $dark-color;
+        color: white;
+
+        h4 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .input_item {
+          display: flex;
+          align-items: center;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+          padding: 10px;
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: white;
+
+            &::placeholder {
+              color: white;
+            }
+          }
+
+          i {
+            color: $primary-color;
+          }
+        }
+
+        .btn_book {
+          padding: 10px;
+          border: none;
+          color: white;
+          font-weight: 500;
+          width: 100%;
+          border-radius: 6px;
+          background-color: $primary-color;
+          margin-top: 15px;
+        }
+      }
+
+      .course_instructor {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+
+        h4 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .profile {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid rgb(218, 218, 218);
+
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+          }
+
+          .text {
+            h5 {
+              font-size: 17px;
+              margin-bottom: 0;
+            }
+
+            .subtitle {
+              color: gray;
+            }
+
+            .rating {
+              margin-bottom: 0;
+              span {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+
+        .desc {
+          font-size: 15px;
+          line-height: 1.6;
+          color: gray;
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .course_details {
+    padding: 30px 0;
+
+    .image_details {
+      img {
+        height: 250px;
+      }
+    }
+
+    .boxs_details {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+
+      .box {
+        flex-direction: column;
+        text-align: center;
+
+        .icon {
+          width: 45px;
+          height: 45px;
+
+          i {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    .line {
+      flex-direction: column;
+      margin-top: 30px;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        .title {
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .dsc {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 5px;
+        }
+
+        .career_opportunities {
+          margin-bottom: 15px;
+
+          h3 {
+            font-size: 18px;
+          }
+
+          .item {
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
+
+            i {
+              font-size: 15px;
+            }
+
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .study_options {
+          margin-bottom: 15px;
+
+          h3 {
+            font-size: 18px;
+          }
+
+          table {
+            width: 100%;
+            margin-top: 0;
+
+            thead {
+              tr {
+                th {
+                  padding: 6px;
+                  font-size: 14px;
+                }
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  padding: 6px;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+
+        .professional_experience {
+          h3 {
+            font-size: 18px;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .right {
+        .box_book_course {
+          padding: 12px;
+
+          h4 {
+            font-size: 17px;
+          }
+
+          .input_item {
+            padding: 4px 10px;
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+
+            input {
+              font-size: 13px;
+            }
+
+            i {
+              font-size: 13px;
+            }
+          }
+
+          .btn_book {
+            padding: 5px;
+            margin-top: 5px;
+            font-size: 15px;
+          }
+        }
+
+        .course_instructor {
+          padding: 12px;
+          margin-top: 12px;
+
+          h4 {
+            font-size: 18px;
+          }
+
+          .profile {
+            padding-bottom: 8px;
+
+            img {
+              width: 60px;
+              height: 60px;
+            }
+
+            .text {
+              h5 {
+                font-size: 15px;
+              }
+
+              .subtitle {
+                font-size: 13px;
+              }
+
+              .rating {
+                font-size: 13px;
+              }
+            }
+          }
+
+          .desc {
+            font-size: 14px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+}
+// end course_details
