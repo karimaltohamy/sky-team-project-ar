@@ -258,6 +258,35 @@ header {
         }
       }
     }
+
+    .dropdown {
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px solid rgb(215, 215, 215);
+
+      button {
+        border: none;
+        background-color: transparent;
+        color: $dark-color;
+        text-align: center;
+
+        .lang_icon {
+          i {
+            font-size: 22px;
+          }
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .dropdown-menu {
+        top: 35px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+      }
+    }
   }
 }
 // end menu_mobile

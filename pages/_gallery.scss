@@ -27,6 +27,8 @@ $primary-color: #dcbb87;
     .box {
       position: relative;
       cursor: pointer;
+      border-radius: 10px;
+      overflow: hidden;
 
       &::before {
         content: "";

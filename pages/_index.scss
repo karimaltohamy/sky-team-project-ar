@@ -115,7 +115,7 @@ $primary-color: #dcbb87;
 
 @media (max-width: 768px) {
   .hero_section {
-    height: 75vh;
+    height: calc(100vh - 51px);
 
     .container {
       .line {
